@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D948B4F-6773-482B-BBEF-831659686525}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FunWitthCode</RootNamespace>
-    <AssemblyName>FunWitthCode</AssemblyName>
+    <ProjectGuid>{821D5DB3-0071-42F7-9CAF-95B0337AA28D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FunWithCodeTestsConsole</RootNamespace>
+    <AssemblyName>FunWithCodeTestsConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,15 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StrategyPattern\CompositionWithStrategyPatterns.cs" />
-    <Compile Include="StrategyPattern\DecorateStrategyAbstractClass.cs" />
-    <Compile Include="StrategyPattern\DecorateStrategyExamples\BlueRibbon.cs" />
-    <Compile Include="StrategyPattern\DecorateStrategyExamples\ForkInTheEye.cs" />
-    <Compile Include="StrategyPattern\IMakeItPrettyStrateyInterface.cs" />
-    <Compile Include="StrategyPattern\DecorateStrategyExamples\PinkStink.cs" />
-    <Compile Include="StrategyPattern\MakeItPrettyStrategyExaples\GlowingMask.cs" />
+    <Compile Include="StrategyTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FunWitthCode\FunWitthCode.csproj">
+      <Project>{6d948b4f-6773-482b-bbef-831659686525}</Project>
+      <Name>FunWitthCode</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
