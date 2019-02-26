@@ -21,9 +21,11 @@ namespace FunWithCodeTestsConsole
         {
 
             // Strategy.StrategyTests.StrategyOnabstractClass(null);
-            ComparingBoxedValues.ComparingBoxedValuesTests.CompareStrings(null);
 
+                IntPerformanceProof.CompareTime.RunTest(null);
+            
 
+            Console.ReadKey();
         }
     }
 }
