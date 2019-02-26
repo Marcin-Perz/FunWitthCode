@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ComparingBoxedValueTypes\ComapreBoxedValues.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StrategyPattern\CompositionWithStrategyPatterns.cs" />
     <Compile Include="StrategyPattern\DecorateStrategyAbstractClass.cs" />
@@ -49,6 +50,9 @@
     <Compile Include="StrategyPattern\IMakeItPrettyStrateyInterface.cs" />
     <Compile Include="StrategyPattern\DecorateStrategyExamples\PinkStink.cs" />
     <Compile Include="StrategyPattern\MakeItPrettyStrategyExaples\GlowingMask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PerformanceTests\SearchingInString\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

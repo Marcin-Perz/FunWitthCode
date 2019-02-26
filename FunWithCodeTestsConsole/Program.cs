@@ -20,7 +20,8 @@ namespace FunWithCodeTestsConsole
         static void Main(string[] args)
         {
 
-            StrategyTests.StrategyOnabstractClass(null);
+            // Strategy.StrategyTests.StrategyOnabstractClass(null);
+            ComparingBoxedValues.ComparingBoxedValuesTests.CompareStrings(null);
 
 
         }
