@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunWitthCode.IntPerformanceProof
 {
-    public class ShortClass
+    public class ShortClass : IValueClass
     {
 
         public short Height { get; set; }
@@ -23,7 +23,7 @@ namespace FunWitthCode.IntPerformanceProof
         }
 
 
-        public void PopulateCubeWithSmallUnitsCubes()
+        public void PopulateCubeWithTypeOfaClassConstructions()
         {
             Random random = new Random();
             Cubes = new short[Length, Width, Height];

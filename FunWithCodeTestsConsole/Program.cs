@@ -22,10 +22,23 @@ namespace FunWithCodeTestsConsole
 
             // Strategy.StrategyTests.StrategyOnabstractClass(null);
 
-                IntPerformanceProof.CompareTime.RunTest(null);
-            
+            FunWitthCode.RandomWithRatioShapes randomWithRatioShapes = new FunWitthCode.RandomWithRatioShapes();
+            var sasd = randomWithRatioShapes.Randomize();
+                StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < sasd.GetUpperBound(0); i++)
+            {
+                StringBuilder sb1 = new StringBuilder();
 
-            Console.ReadKey();
+                for (int k = 0; k < sasd.GetUpperBound(1); k++)
+                {
+                    sb1.Append(sasd[i, k]);
+
+                }
+                sb.AppendLine(sb1.ToString());
+
+            }
+            Console.Write(sb.ToString());
+            Console.ReadKey(); Console.ReadKey(); Console.ReadKey(); Console.ReadKey();
         }
     }
 }

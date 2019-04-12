@@ -2,7 +2,7 @@
 
 namespace FunWitthCode.IntPerformanceProof
 {
-    public class IntClass
+    public class IntClass : IValueClass
     {
 
         public int Height { get; set; }
@@ -19,7 +19,7 @@ namespace FunWitthCode.IntPerformanceProof
         }
 
 
-        public void PopulateCubeWithSmallUnitsCubes()
+        public void PopulateCubeWithTypeOfaClassConstructions()
         {
             Random random = new Random();
             Cubes = new int[Length, Width, Height];

@@ -16,5 +16,11 @@ namespace FunWithCodeWinForms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new  RectanglesRandomFill();
+            form.Show();
+        }
     }
 }

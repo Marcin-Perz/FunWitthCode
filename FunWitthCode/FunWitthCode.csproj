@@ -45,8 +45,12 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ComparingBoxedValueTypes\ComapreBoxedValues.cs" />
     <Compile Include="IntPerformanceProof\IntClass.cs" />
+    <Compile Include="IntPerformanceProof\IValueClass.cs" />
+    <Compile Include="IntPerformanceProof\LongClass.cs" />
+    <Compile Include="IntPerformanceProof\PerformanceMessurments.cs" />
     <Compile Include="IntPerformanceProof\ShortClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomWithRatioShapes.cs" />
     <Compile Include="StrategyPattern\CompositionWithStrategyPatterns.cs" />
     <Compile Include="StrategyPattern\DecorateStrategyAbstractClass.cs" />
     <Compile Include="StrategyPattern\DecorateStrategyExamples\BlueRibbon.cs" />
